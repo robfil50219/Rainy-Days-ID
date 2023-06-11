@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart | Rainy Days</title>
+    <link rel="stylesheet" href="css/cart.css" />
+    <header>
+        <div class="left-section">
+          <a href="index.html" class="continue-shopping-button">Continue Shopping</a>
+        </div>
+        <h1 class="center-section">Shopping Cart</h1>
+        <div class="right-section">
+        </div>
+      </header>
+    <main>
+      <div class="cart-items">
+        <div class="cart-item">
+          <img src="images/green t-shirt.png" alt="Green t-shirt" />
+          <div class="item-details">
+            <h2>Product 1</h2>
+            <p>Price: $19.99</p> 
+            <label for="quantity-input">Quantity</label>
+            <input type="number" class="quantity-input" value="1" min="1">
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="images/mens black pants.png" alt="Product 2" />
+          <div class="item-details">
+            <h2>Product 2</h2>
+            <p>Price: $69.99</p>
+            <label for="quantity-input">Quantity</label>
+            <input type="number" class="quantity-input" value="1" min="1">
+          </div>
+        </div>
+      </div>
+      <div class="cart-summary">
+        <h2>Cart Summary</h2>
+        <p>Total Items: 2</p>
+        <p>Total Price: $89.97</p>
+        <a href="checkout.html" class="checkout-button">Checkout</a>
+      </div>
+    </main>
+    <div class="customer-info">
+        <h2>Customer Information</h2>
+        <div class="form-group">
+          <label for="name-input">Name:</label>
+          <input type="text" id="name-input" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="card-number-input">Card Number:</label>
+          <input type="text" id="card-number-input" placeholder="Enter your card number">
+        </div>
+        <div class="form-group">
+          <label for="expiry-date-input">Expiry Date:</label>
+          <input type="text" id="expiry-date-input" placeholder="MM/YY">
+        </div>
+        <div class="form-group">
+          <label for="cvv-input">CVV:</label>
+          <input type="text" id="cvv-input" placeholder="Enter CVV"> 
+        </div>
+        <div class="form-group">
+          <label for="email-input">Email:</label>
+          <input type="text" id="email-input" placeholder="Enter your Email">
+        </div>
+      </div>
+  </body>
+</html>
