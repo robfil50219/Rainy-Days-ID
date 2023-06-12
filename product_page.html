@@ -65,15 +65,33 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
       }
 
       .buy-button-container {
         margin-left: auto;
       }
+
+      .logo img {
+        width: 150px;
+        flex: auto;
+        position: absolute;
+        left: 0;
+        margin-bottom: 20px;
+        margin-left: 20px;
+      }
     </style>
   </head>
   <body>
     <header>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="images/RainyDays_logo 6.png"
+            alt="Rainy Days logo Mountains and text with colour"
+          />
+        </a>
+      </div>
       <h1>Senja L3 Jacket</h1>
       <p class="item-price">$49.99</p>
       <div class="buy-now">
@@ -131,8 +149,5 @@
         </p>
       </div>
     </div>
-    <footer class="footer">
-      <!-- Footer content here -->
-    </footer>
   </body>
 </html>
