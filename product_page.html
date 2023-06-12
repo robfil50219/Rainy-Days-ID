@@ -28,10 +28,13 @@
         margin-top: 50px;
         margin-left: 20px;
         margin-right: 20px;
+        overflow: hidden;
       }
 
       .product-image img {
         transition: transform 0.3s ease;
+        max-width: 100%;
+        height: fit-content;
       }
 
       .product-image img:hover {
@@ -48,8 +51,8 @@
       .text-box {
         background-color: #f9f9f9;
         padding: 10px;
-        margin-right: 200px;
-        margin-left: 200px;
+        margin-right: 300px;
+        margin-left: 300px;
       }
 
       .buy-now {
@@ -80,6 +83,10 @@
         margin-bottom: 20px;
         margin-left: 20px;
       }
+
+      .size-selection {
+        margin-right: 10px;
+      }
     </style>
   </head>
   <body>
@@ -95,6 +102,15 @@
       <h1>Senja L3 Jacket</h1>
       <p class="item-price">$49.99</p>
       <div class="buy-now">
+        <div class="size-selection">
+          <label for="size-select">Size:</label>
+          <select id="size-select">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="x-large">X-Large</option>
+          </select>
+        </div>
         <button class="buy-button">Buy Now</button>
       </div>
     </header>
