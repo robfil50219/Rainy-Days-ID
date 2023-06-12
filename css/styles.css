@@ -465,18 +465,21 @@ footer {
 
 /*New Arrivals*/ 
 
-.image-container.newArrivals {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-} 
-
-.image-container.image-container.newArrivals img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 400px; 
-    height: 100px; 
+.image-container_newArrivals {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
 }
+
+.image-container_newArrivals img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain; 
+  margin: 20px;
+}
+
+
 
 /*Sale*/ 
 
@@ -635,6 +638,19 @@ footer {
 
   margin-top: 50px;
 }
+
+/*New Arrivals*/ 
+
+.image-container.newArrivals {
+
+  margin-bottom: 20px;
+}
+
+.image-wrapper { 
+  margin-bottom: 20px;
+}
+
+
 
 
 
