@@ -60,8 +60,73 @@
 
 /* Mobile Devices (up to 767 pixels) */
 @media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
   .image-container {
-    margin-top: 50px;
+    margin-top: 30px;
+  }
+
+  /* Additional Mobile-Specific Styles */
+  .body-items {
+    margin: 20px;
+  }
+
+  .body-items img {
+    margin: 5px;
+  }
+
+  .image-caption {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .buy-button {
+    padding: 8px 16px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+  }
+
+  .menu ul li {
+    margin-bottom: 20px;
+  }
+
+  .search-container {
+    margin-bottom: 10px;
+  }
+
+  .search-icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .search-input {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .search-button {
+    padding: 5px 10px;
+    font-size: 14px;
   }
 }
 
