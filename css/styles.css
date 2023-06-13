@@ -320,8 +320,9 @@ header {
   display: flex;
   justify-content: center;
   align-content: flex-end;
-  height: 250px;
+  height: 300px;
   max-height: 100%;
+  width: 100%;
 }
 
 input[type="checkbox"] {
