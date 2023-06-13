@@ -164,6 +164,7 @@ body {
   margin: 10px;
   transition: transform 0.3s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
 }
 
 .body-items img:hover {
@@ -188,8 +189,13 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
-  margin-top: 10px;
+  margin-top: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.buy-button:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+  text-decoration: underline;
 }
 
 header {
@@ -218,8 +224,10 @@ header {
   top: 100%;
   background-color: rgba(3, 3, 3, 0.8);
   padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
   z-index: 1;
+  border-bottom-right-radius: 10px;
+  border: 1px solid rgb(176, 172, 172);
 }
 
 .submenu {
@@ -230,6 +238,8 @@ header {
   background-color: black;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 3;
+  border-radius: 10px;
+  border: 1px solid rgb(176, 172, 172);
 }
 
 #menu-toggle:checked + .menu {
@@ -251,6 +261,9 @@ header {
 .menu ul li a {
   text-decoration: none;
   color: #ffffff;
+}
+.menu ul li a:hover {
+  text-decoration: underline;
 }
 
 .menu ul li:hover > .submenu {
@@ -320,8 +333,8 @@ header {
   display: flex;
   justify-content: center;
   align-content: flex-end;
-  max-height: 300px;
   height: 300px;
+  max-height: 100%;
   width: 100%;
 }
 
@@ -657,11 +670,63 @@ footer {
 
 /*Contact Us*/ 
 
-.contact-form-container {
-
-  margin-top: 50px;
+.contact-text {
+  text-align: center;
+  padding: 20px;
 }
 
+.contact-text p {
+
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact-form-container form {
+  width: 400px;
+  display: grid;
+  gap: 10px;
+}
+
+.contact-form-container label {
+
+  display: block;
+}
+
+.continue-shopping-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.continue-shopping-button:hover {
+  text-decoration: underline;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.left-header { 
+  margin-right: auto; 
+}
+
+.center-header{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
 /*New Arrivals*/ 
 
 .image-container.newArrivals {
@@ -671,6 +736,18 @@ footer {
 
 .image-wrapper { 
   margin-bottom: 20px;
+}
+/*womans*/ 
+
+.womans-page {
+  background-color: #F99963
+  
+} 
+
+.row {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 

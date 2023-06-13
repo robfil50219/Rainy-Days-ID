@@ -8,8 +8,21 @@
   </head>
   <body>
     <header>
-      <h1>Contact Us</h1>
+      <div class="left-header">
+        <a href="index.html" class="continue-shopping-button"
+          >Continue Shopping</a
+        >
+      </div>
+      <h1 class="center-header">Contact Us</h1>
+      <div class="right-section"></div>
     </header>
+    <div class="contact-text">
+      <p>
+        We'd love to hear from you! If you have any questions, feedback, or
+        inquiries, please feel free to get in touch with us using the contact
+        form below.
+      </p>
+    </div>
     <div class="contact-form-container">
       <form action="process-contact.php" method="post">
         <label for="name">Name:</label>
@@ -20,6 +33,12 @@
         <textarea id="message" name="message" rows="5" required></textarea>
         <button type="submit">Send Message</button>
       </form>
+    </div>
+    <div class="contact-text">
+      <p>
+        We'll do our best to respond to your message as soon as possible. Thank
+        you for reaching out!
+      </p>
     </div>
   </body>
 </html>
