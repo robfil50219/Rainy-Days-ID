@@ -1,1 +1,1 @@
-# This is the repo for my Rainy Days Webshop 
+# This is the html and css for my Rainy Days Webshop
