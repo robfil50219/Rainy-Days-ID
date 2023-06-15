@@ -185,8 +185,8 @@ body {
 } 
 
 .buy-button {
-  background-color: #3498db;
-  color: #000000;
+  background-color: #004cfd;
+  color: #ffffff;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -198,8 +198,12 @@ body {
 .buy-button:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
   text-decoration: underline;
+  background-color: #005eff;
 }
 
+.buy-button:active {
+  background-color: #00398c;
+}
 header {
   position: relative;
   background-color: #90BABF;
