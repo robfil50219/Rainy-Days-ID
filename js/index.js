@@ -1,7 +1,6 @@
 const apiURL = 'https://api.noroff.dev/api/v1/rainy-days';
 
 // Fetch data from the API
-
 const fetchData = async () => {
   try {
     const response = await fetch(apiURL);
@@ -12,53 +11,56 @@ const fetchData = async () => {
 
     // Code to handle the data goes here
 
-    displayProducts(data); //Call the function to display products 
+    displayProducts(data); // Call the function to display products
   } catch (error) {
     console.error('Error fetching data', error);
   }
 };
 
-//Function to display products 
-
+// Function to display products
 const displayProducts = (products) => {
-  const productContainer =document.querySelector('.body-items .row'); 
+  const productContainer = document.querySelector('.body-items .row');
 
-  productContainer.forEach(product) => {
-    const item = document.createElement('div'); 
+  products.forEach((product) => {
+    const item = document.createElement('div');
     item.classList.add('item');
 
-    const buyNowDiv = document.createElement('div'); 
+    const buyNowDiv = document.createElement('div');
     buyNowDiv.classList.add('buy-now');
 
-    const buyButton = document.createElement ('button'); 
-    buyButton.classList.add('buy-button'); 
-    buyButton.textContent = 'Buy Now'; 
-    buyNowDiv.appendChild(buyButton); 
+    const buyButton = document.createElement('button');
+    buyButton.classList.add('buy-button');
+    buyButton.textContent = 'Buy Now';
+    buyNowDiv.appendChild(buyButton);
 
-    const productLink = document.createElement('a')
-    productLink.herf = 'product_page.html'; 
+    const productLink = document.createElement('a');
+    productLink.href = `product_page.html?id=${product.id}`;
 
-    const productImage = document.createElement('img'); 
-    productImage.src = product.image; 
-    productImage.alt = product.title; 
-    productLink.apperentchild(productImage); 
+    const productImage = document.createElement('img');
+    productImage.src = product.image;
+    productImage.alt = product.title;
+    productLink.appendChild(productImage);
 
-    const itemCaption = document.createElement('div'); 
-    itemCaption.classList.add('item-caption'); 
+    const itemCaption = document.createElement('div');
+    itemCaption.classList.add('item-caption');
 
-    const itemPrice = document.createElement('p'); 
-    itemPrice.classList.add('item-price'); 
-    itemPrice.textContent =´$${product.price}´; 
-    itemCaption.appendChild(itemPrice); 
+    const itemPrice = document.createElement('p');
+    itemPrice.classList.add('item-price');
+    itemPrice.textContent = `$${product.price}`;
+    itemCaption.appendChild(itemPrice);
 
-    
-    
-    
+    const itemText = document.createElement('p');
+    itemText.classList.add('item-text');
+    itemText.textContent = product.title;
+    itemCaption.appendChild(itemText);
 
+    item.appendChild(buyNowDiv);
+    item.appendChild(productLink);
+    item.appendChild(itemCaption);
 
-  } 
-}
+    productContainer.appendChild(item);
+  });
+};
 
-// Call the fetchData function when the page loads 
-
+// Call the fetchData function when the page loads
 fetchData();
