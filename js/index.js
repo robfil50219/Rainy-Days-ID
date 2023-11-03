@@ -36,6 +36,24 @@ const displayProducts = (products) => {
     buyNowDiv.appendChild(buyButton); 
 
     const productLink = document.createElement('a')
+    productLink.herf = 'product_page.html'; 
+
+    const productImage = document.createElement('img'); 
+    productImage.src = product.image; 
+    productImage.alt = product.title; 
+    productLink.apperentchild(productImage); 
+
+    const itemCaption = document.createElement('div'); 
+    itemCaption.classList.add('item-caption'); 
+
+    const itemPrice = document.createElement('p'); 
+    itemPrice.classList.add('item-price'); 
+    itemPrice.textContent =´$${product.price}´; 
+    itemCaption.appendChild(itemPrice); 
+
+    
+    
+    
 
 
   } 
