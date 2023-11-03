@@ -8,5 +8,8 @@ const getproductData = async () => {
         if (!response.ok) {
             throw new Error ('Network response was not ok'); 
         }
+        const productData = await response.json(); 
+
+        displayProductDetails(productData); // Call the function to display the data 
     }
-}
+}; 
