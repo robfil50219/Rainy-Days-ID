@@ -9,7 +9,6 @@ const fetchData = async () => {
     }
     const data = await response.json();
 
-    // Code to handle the data goes here
 
     displayProducts(data); // Call the function to display products
   } catch (error) {
@@ -18,7 +17,7 @@ const fetchData = async () => {
 };
 
 // Function to display products
-const displayProducts = (products) => {
+const displayProducts = (products) => { 
   const productContainer = document.querySelector('.body-items .row');
 
   products.forEach((product) => {
