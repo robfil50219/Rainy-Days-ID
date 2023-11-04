@@ -1,19 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const loadingIndicator = document.getElementById('loading-indicator');
+  loadingIndicator.style.display = 'block';
+
   const getProductData = async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
     const productDetailURL = `https://api.noroff.dev/api/v1/rainy-days/${productId}`;
 
     try {
-        const response = await fetch(productDetailURL);
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const productData = await response.json();
+      const response = await fetch(productDetailURL);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const productData = await response.json();
 
-        displayProductDetails(productData); // Call the function to display the data
+      displayProductDetails(productData); // Call the function to display the data
     } catch (error) {
-        console.error('Error fetching product data', error);
+      console.error('Error fetching product data', error);
     }
   };
 
@@ -29,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
     productDescription.textContent = product.description;
   };
 
-  getProductData(); // Call the getProductData function when the page loads
+  getProductData().then(() => {
+    loadingIndicator.style.display = 'none';
+  }); // Call the getProductData function when the page loads
 });
 
     
