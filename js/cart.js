@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded'),() => {
     //function to update price based on quantity
 
     const updateTotalPrice = () => {
-        let totalPrice =
-    }
+        let totalPrice = 0; 
+        itemPrices.forEach((itemPrice, index) => {
+            totalPrice += parseFloat(itemPrice.textContent.replace('$', '')) * parseInt(quantityInputs[index].value);
+        });
+        totalPriceElemnt.textcontent = `$${totalPrice.toFixed(2)}`; 
+    };
+
+    //Add event listner to each quantity input
 }
