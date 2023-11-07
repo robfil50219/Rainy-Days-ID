@@ -16,18 +16,18 @@ header {
 
 .product-image {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
   overflow: hidden;
 }
 
 .product-image img {
   transition: transform 0.3s ease;
   max-width: 100%;
-  height: fit-content;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .product-image img:hover {
