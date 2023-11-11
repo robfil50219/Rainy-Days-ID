@@ -1,1 +1,1 @@
-# This is the html and css for my Rainy Days Webshop
+# JS1- Course Assignment
