@@ -1,3 +1,5 @@
+export { addItemToCart, removeItemFromCart, getCartItems };
+
 document.addEventListener('DOMContentLoaded', () => {
   // Array to store cart items
   let cartItems = [];
