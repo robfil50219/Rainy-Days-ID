@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let cartItems = [];
 
   // Function to add an item to the cart
-  export const addItemToCart = (productId) => {
+   const addItemToCart = (productId) => {
     const cartItem = cartItems.find((item) => item.id === productId);
 
     if (cartItem) {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Function to remove an item from the cart
-  export const removeItemFromCart = (productId) => {
+   const removeItemFromCart = (productId) => {
     cartItems = cartItems.filter((item) => item.id !== productId);
 
     // Trigger a custom event when an item is removed from the cart
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Function to get the current cart items
-  export const getCartItems = () => {
+ const getCartItems = () => {
     return cartItems;
   };
 });
