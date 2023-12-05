@@ -1,5 +1,3 @@
-// index.js
-
 import { addItemToCart, getCartItems } from './cart';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,23 +5,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const loadingIndicator = document.getElementById('loading-indicator');
   const productContainer = document.querySelector('.body-items .row');
   const cartSummaryContainer = document.querySelector('.cart-summary');
+  let products = []; 
 
-  // Fetch data from the API
-  const fetchData = async () => {
-    try {
-      const response = await fetch(apiURL);
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
+    // Fetch data from the API
+    const fetchData = async () => {
+      try {
+        const response = await fetch(apiURL);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        products = await response.json(); 
+        displayProducts(products); 
+      } catch (error) {
+        console.error('Error fetching data', error);
+      } finally {
+        loadingIndicator.style.display = 'none'; // Hide the loading indicator when the data is loaded
       }
-      const data = await response.json();
-
-      displayProducts(data); // Call the function to display products
-    } catch (error) {
-      console.error('Error fetching data', error);
-    } finally {
-      loadingIndicator.style.display = 'none'; // Hide the loading indicator when the data is loaded
-    }
-  };
+    };
 
   // Function to display products
   const displayProducts = (products) => {
@@ -108,5 +106,3 @@ document.addEventListener('DOMContentLoaded', () => {
   // Render cart summary on page load
   renderCartSummary();
 });
-
-
