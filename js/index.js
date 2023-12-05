@@ -1,4 +1,4 @@
-import { addItemToCart, getCartItems } from '/cart';
+import { addItemToCart, getCartItems } from './cart';
 
 document.addEventListener('DOMContentLoaded', () => {
   const apiURL = 'https://api.noroff.dev/api/v1/rainy-days';
