@@ -1,1 +1,1 @@
-# JS1- Course Assignment
+# Interaction Design - Course Assignment
