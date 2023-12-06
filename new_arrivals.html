@@ -4,24 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Rainy Days</title>
+    <title>New Arrivals | Rainy Days</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Hotjar Tracking Code for https://robert-filep-rainy-days-id.netlify.app/ -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3775362, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+    <script defer src="js/index.js"></script>
   </head>
   <body>
     <header>
@@ -79,112 +64,7 @@
     <main>
       <h1>New Arrivals</h1>
       <div class="body-items">
-        <div class="row">
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img
-                src="images/yellow_jacket.png"
-                alt="Yellow Jacket"
-                width="450"
-                height="550"
-              />
-            </a>
-            <div class="item-caption">
-              <p class="item-text">Yellow Jacket</p>
-              <p class="item-price">$49.99</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img
-                src="images/gray_pants.png"
-                alt="Gray Pants"
-                width="450"
-                height="550"
-              />
-            </a>
-            <div class="item-caption">
-              <p class="item-text">Gray Pants</p>
-              <p class="item-price">$29.99</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img
-                src="images/green_t-shirt.png"
-                alt="Green T-shirt"
-                width="450"
-                height="550"
-              />
-            </a>
-            <div class="item-caption">
-              <p class="item-text">Green T-shirt</p>
-              <p class="item-price">$19.99</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img
-                src="images/black_jacket.png"
-                alt="Black Jacket"
-                width="250"
-                height="350"
-              />
-            </a>
-            <div class="item-caption">
-              <p class="item-text">Black Jacket</p>
-              <p class="item-price">$59.99</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img
-                src="images/mens_red_jacket.png"
-                alt="Red Jacket"
-                width="250"
-                height="350"
-              />
-            </a>
-            <div class="item-caption">
-              <p class="item-text">Red Jacket</p>
-              <p class="item-price">$69.99</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img
-                src="images/womans_blue_jacket.png"
-                alt="Blue Jacket"
-                width="250"
-                height="350"
-              />
-            </a>
-            <div class="item-caption">
-              <p class="item-text">Blue Jacket</p>
-              <p class="item-price">$79.99</p>
-            </div>
-          </div>
-        </div>
+        <div class="row" id="loading-indicator">Loading...</div>
       </div>
     </main>
     <footer>
