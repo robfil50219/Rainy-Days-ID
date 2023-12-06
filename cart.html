@@ -39,30 +39,13 @@
       <div class="right-section"></div>
     </header>
     <main>
-      <div class="cart-items">
-        <div class="cart-item">
-          <img src="images/green_t-shirt.png" alt="Green t-shirt" />
-          <div class="item-details">
-            <h2>Green T-Shirt</h2>
-            <p>Price: $19.99</p>
-            <label for="quantity-input">Quantity</label>
-            <input type="number" class="quantity-input" value="1" min="1" />
-          </div>
-        </div>
-        <div class="cart-item">
-          <img src="images/mens_black_pants.png" alt="Black Pants" />
-          <div class="item-details">
-            <h2>Black Pants</h2>
-            <p>Price: $69.99</p>
-            <label for="quantity-input">Quantity</label>
-            <input type="number" class="quantity-input" value="1" min="1" />
-          </div>
-        </div>
+      <div class="cart-items" id="cartItemsContainer">
+        <!-- Cart items will be dynamically added here -->
       </div>
       <div class="cart-summary">
         <h2>Cart Summary</h2>
-        <p>Total Items: 2</p>
-        <p>Total Price: $89.97</p>
+        <p>Total Items: <span id="totalItems">0</span></p>
+        <p>Total Price: $<span id="totalPrice">0.00</span></p>
         <a href="checkout.html" class="checkout-button">Checkout</a>
       </div>
       <div class="customer-info">
