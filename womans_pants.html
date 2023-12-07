@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WOMAN'S PANTS | Rainy Days</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/womans_pants.js"></script>
     <!-- Hotjar Tracking Code for https://robert-filep-rainy-days-id.netlify.app/ -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -79,82 +80,7 @@
     <main>
       <h1>Woman's Pants</h1>
       <div class="body-items">
-        <div class="row">
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img src="images/woman's_tights.png" alt="Woman's Tights" />
-            </a>
-            <div class="item-caption">
-              <p class="item-price">$49.99</p>
-              <p class="item-text">Black Tights</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img src="images/gray_pants.png" alt="Gray Pants" />
-            </a>
-            <div class="item-caption">
-              <p class="item-price">$69.99</p>
-              <p class="item-text">Grey Pants</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img src="images/womans_blue_shorts.png" alt="Red Top" />
-            </a>
-            <div class="item-caption">
-              <p class="item-price">$30</p>
-              <p class="item-text">Blue Shorts</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img src="images/womans_red_pants.png" alt="Black Jacket" />
-            </a>
-            <div class="item-caption">
-              <p class="item-price">$100</p>
-              <p class="item-text">Red Pants</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img src="images/womans_green_pants.png" alt="Green Pants" />
-            </a>
-            <div class="item-caption">
-              <p class="item-price">$99.99</p>
-              <p class="item-text">Green Pants</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="buy-now">
-              <button class="buy-button">Buy Now</button>
-            </div>
-            <a href="product_page.html">
-              <img src="images/womans_black_pants.png" alt="Blue Jacket" />
-            </a>
-            <div class="item-caption">
-              <p class="item-price">$200</p>
-              <p class="item-text">Black Pants</p>
-            </div>
-          </div>
-        </div>
+        <div class="row" id="pants-items-container"></div>
       </div>
     </main>
     <footer>
@@ -177,5 +103,6 @@
         </div>
       </div>
     </footer>
+    <div id="loading-indicator">Loading...</div>
   </body>
 </html>
