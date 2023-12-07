@@ -282,6 +282,24 @@ header {
   display: block;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.menu {
+  display: none; 
+}
+
+
+input[type="checkbox"]:checked ~ .menu {
+  display: block;
+}
+
 .cart {
   position: absolute;
   top: 0;
@@ -350,23 +368,6 @@ header {
   width: 100%;
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
-.menu-icon {
-  cursor: pointer;
-  font-size: 24px;
-}
-
-.menu {
-  display: none; 
-}
-
-
-input[type="checkbox"]:checked ~ .menu {
-  display: block;
-}
 
 h1 {
   text-align: center;
@@ -793,8 +794,9 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  background-color: rgba(140, 140, 140, 0.8);
+  background-color: #F99963;
   padding: 20px;
+  border-radius: 10%;
 }
 
 
