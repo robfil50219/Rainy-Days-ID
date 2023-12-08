@@ -27,10 +27,11 @@ header {
   background-color: #90babf;
   padding: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
+  margin-bottom: 20px;
 }
 
 /* product styles */
-#product-title {
+#product-title{
   display: inline-block;
   vertical-align: middle;
 }
@@ -96,13 +97,14 @@ header {
   font-size: 34px;
   padding: 10px;
   cursor: pointer;
-  transition: color 0,3s ease;
+  transition: color 0.3s ease; 
+  vertical-align: middle;
 }
 
-#favorite-button.favorite {
-  background-color: transparent;
-  color: white;
-
+#favorite-text {
+  margin-left: 5px;
+  font-size: 14px; 
+  color: #555; 
 }
 
 
