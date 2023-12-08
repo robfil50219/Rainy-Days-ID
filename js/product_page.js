@@ -35,7 +35,29 @@ document.addEventListener('DOMContentLoaded', () => {
   getProductData().then(() => {
     loadingIndicator.style.display = 'none';
   }); // Call the getProductData function when the page loads
+
+ 
+  function toggleFavorite() {
+    const button = document.getElementById('favorite-button');
+    button.classList.toggle('favorite');
+    const isFavorite = button.classList.contains('favorite');
+
+    // Change emoji color based on whether it's marked as favorite or not
+    const heartEmoji = document.getElementById('heart');
+    heartEmoji.innerHTML = isFavorite ? '🤍' : '❤️';
+    heartEmoji.style.color = isFavorite ? 'grey' : 'red';
+  }
+
+ // Initialize the button as grey
+ toggleFavorite();
+
+  // Add event listener to the button
+  const favoriteButton = document.getElementById('favorite-button');
+  favoriteButton.addEventListener('click', toggleFavorite);
+  
+  
 });
+
 
     
  

@@ -26,13 +26,13 @@ header {
   justify-content: center;
   background-color: #90babf;
   padding: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
 }
 
-.buy-now {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+/* product styles */
+#product-title {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .item-price {
@@ -65,6 +65,7 @@ header {
 }
 
 
+/*loading indicator styles */
 
 #loading-indicator {
   display: block;
@@ -86,17 +87,29 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
 }
 
-#add-to-favorites:hover,
-#remove-from-favorites:hover {
-  background-color: #297fb8;
+/*buttons styles*/
+
+#favorite-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 34px;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0,3s ease;
 }
 
-#remove-from-favorites {
-  background-color: #e74c3c;
+#favorite-button.favorite {
+  background-color: transparent;
+  color: white;
+
 }
 
-#remove-from-favorites:hover {
-  background-color: #c0392b;
+
+.buy-now {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .buy-button {
@@ -115,6 +128,7 @@ header {
   background-color: #297fb8;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+/*menu styles*/ 
 
 .menu-icon {
   position: absolute;
