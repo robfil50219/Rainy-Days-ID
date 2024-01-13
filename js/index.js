@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const apiURL = 'https://api.noroff.dev/api/v1/rainy-days';
+  const apiURL = 'https://rainy-days.local/wp-json/wc/store/products';
   const loadingIndicator = document.getElementById('loading-indicator');
 
   // Fetch data from the API
